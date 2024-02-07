@@ -1,0 +1,2737 @@
+html {
+  overflow-x: hidden;
+}
+body {
+  font-family: "BPG Mrgvlovani Caps 2010";
+  overflow-x: hidden !important;
+  /* background-image: url("../img/bg.svg"); */
+  color: #5a5a5a;
+  background-color: #efefef;
+}
+.img_fluid {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+main {
+  min-height: calc(100vh - 345px);
+}
+/*mobile_menu*/
+.mobile_menu_block {
+  padding: 10px 0;
+}
+.menu_block {
+  align-items: center;
+}
+.mobile_menu_items {
+  /* background-color: #09bc8a; */
+  color: #09bc8a;
+  padding: 0 20px;
+}
+.burger_menu {
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-animation: burgerAnimation 3s linear infinite alternate;
+  animation: burgerAnimation 3s linear infinite alternate;
+  width: 30px;
+  height: 23px;
+  padding: 0px 5px;
+  border-radius: 2px;
+}
+
+.burger__ {
+  display: block;
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.burger__ i {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 3px;
+  color: #ffa200;
+  text-transform: uppercase;
+  text-indent: -55px;
+  background: #ffa200;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.burger__ i::before {
+  top: -7px;
+}
+
+.burger__ i::before,
+.burger__ i::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #ffa200;
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.burger__ i::after {
+  bottom: -7px;
+}
+
+.burger__.burg_act i {
+  background: transparent;
+}
+
+.burger__.burg_act i::before {
+  top: 0;
+  -webkit-transform: rotateZ(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotateZ(45deg);
+}
+
+.burger__.burg_act i::after {
+  bottom: 0;
+  -webkit-transform: rotateZ(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotateZ(-45deg);
+}
+
+.mobile_navigation {
+  position: fixed;
+  z-index: 999;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  top: 97px;
+  left: -2px;
+  padding-top: 20px;
+  margin: 0px !important;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  font-size: 14px;
+}
+.mobile_navigation .nav_li {
+  color: #000;
+}
+.nav_li {
+  padding: 10px 0;
+}
+
+.nav_act {
+  -webkit-transform: translateX(0%) !important;
+  -ms-transform: translateX(0%) !important;
+  transform: translateX(0%) !important;
+  -webkit-transition-delay: 0.3s !important;
+  -o-transition-delay: 0.3s !important;
+  transition-delay: 0.3s !important;
+  left: 0px;
+}
+
+.overflow_hidden {
+  overflow: hidden !important;
+}
+
+/*mobile_menu end*/
+.user_ {
+  font-size: 30px;
+  margin-right: 15px;
+}
+.top_block {
+  padding: 10px 0;
+  justify-content: flex-end;
+}
+.search-box {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-search {
+  height: 35px;
+  width: 35px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+  padding-right: 40px;
+  border: 1px solid #c8c8c8;
+  color: #000;
+}
+.input-search::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.btn-search {
+  height: 35px;
+  width: 35px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  color: #000;
+  background-color: transparent;
+  pointer-events: painted;
+}
+.input-search:focus {
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #09bc8a;
+  width: 300px;
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+
+.box {
+  position: relative;
+  margin-right: 20px;
+}
+.input {
+  padding: 10px;
+  width: 35px;
+  height: 35px;
+  background: none;
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #000;
+  outline: none;
+  transition: 0.5s;
+  background-color: #ffffff;
+}
+.box:hover input {
+  width: 150px;
+  background: #fff;
+  border: 1px solid #c8c8c8;
+}
+.box i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #000;
+  background-color: #fff;
+  transition: 0.2s;
+}
+.box:hover i {
+  left: initial;
+  right: 0;
+}
+
+.add_btn {
+  padding: 10px;
+  background-color: #09bc8a !important;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.custom_container {
+  padding: 0 35px 40px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 16%);
+  background-color: #fff;
+}
+.header_info {
+  padding: 20px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.logo_ {
+  width: 107px;
+  height: 135px;
+  margin-top: -50px;
+  position: relative;
+  z-index: 1;
+}
+.nav_list {
+  padding: 15px 12px;
+  position: relative;
+  font-size: 14px;
+  display: inline-block;
+  z-index: 2;
+  color: #000;
+}
+.nav_list:hover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  right: 0;
+  border-top: 30px solid #09bc8a;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  z-index: -1;
+}
+
+.sub_menu {
+  position: absolute;
+  bottom: -90px;
+  width: 100%;
+  min-width: 150px;
+  left: 50%;
+  transform: translate(-50%);
+  border: 1px solid #ececec;
+  background-color: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 16%);
+  padding: 15px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.sub_li {
+  text-align: center;
+  font-size: 10px;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+.sub_li:last-child {
+  margin-bottom: 0;
+}
+.sub_li:hover {
+  color: #09bc8a;
+}
+
+.nav_list:hover .sub_menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.registration_btn {
+  color: #09bc8a;
+  text-decoration: underline;
+  font-size: 12px;
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+.sign_in {
+  background-color: #fff;
+  border-radius: 23px;
+  border: 1px solid #09bc8a;
+  font-size: 12px;
+  padding: 10px 25px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.sign_in:hover {
+  background-color: #09bc8a;
+}
+.sign_menu {
+  left: initial !important;
+  top: -50px !important;
+  right: -40px;
+  border: 1px solid #c8c8c8;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 16%);
+  background-color: #fff;
+  min-width: 340px;
+  border-radius: 5px;
+}
+.sign_menu .form-group {
+  position: relative;
+}
+.sign_menu .form-group input {
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+  padding-left: 35px;
+  font-size: 12px;
+  font-family: "BPG Mrgvlovani";
+}
+.sign_menu .form-group i {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: #9c9c9c;
+}
+.sign_menu .form-group input::placeholder {
+  color: #9c9c9c;
+}
+.sign_menu .form-control:focus {
+  border: 1px solid #c8c8c8;
+  box-shadow: none;
+}
+.btn_primary {
+  background-color: #09bc8a;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #fff;
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+.recovery_ {
+  font-size: 12px;
+  font-family: "BPG Mrgvlovani";
+  text-decoration: underline;
+}
+.s1 {
+  width: 100%;
+  z-index: 0;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: none;
+}
+
+.s1 .swiper-button-prev,
+.s1 .swiper-button-next {
+  content: none;
+  opacity: 1;
+}
+.circle_ {
+  position: absolute;
+  background-color: rgba(216, 216, 216, 78%);
+  width: 38px;
+  height: 38px;
+  z-index: -1;
+  top: -7px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.s1 .swiper-button-prev .circle_ {
+  left: -15px;
+}
+.s1 .swiper-button-next .circle_ {
+  right: -15px;
+}
+.s1 .swiper-button-next {
+  right: 465px;
+}
+
+.s1 .swiper-button-prev {
+  left: 55px;
+}
+.s1 .swiper-button-prev img,
+.s1 .swiper-button-next img {
+  transition: all 0.3s ease;
+}
+.s1 .swiper-button-prev:hover img {
+  transform: translateX(-12%);
+}
+.s1 .swiper-button-next:hover img {
+  transform: translateX(12%);
+}
+.s1 .swiper-button-prev:hover .circle_,
+.s1 .swiper-button-next:hover .circle_ {
+  background-color: #09bc8a;
+}
+
+.img_item {
+  width: 880px;
+  height: 532px;
+}
+.info_block {
+  color: #fff;
+  background-color: #09bc8a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  width: 389px;
+  line-height: normal;
+}
+
+.main_title {
+  font-size: 40px;
+  font-family: "Gilroy GEO";
+  margin-bottom: 50px;
+}
+.sub_txt {
+  font-family: "BPG Mrgvlovani";
+  line-height: normal;
+  margin-bottom: 50px;
+}
+
+.see_more {
+  width: 179px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #414141;
+  border: 1px solid #414141;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.see_more:hover {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.information_txt {
+  margin-bottom: 30px;
+}
+.see_ {
+  text-decoration: underline;
+  font-size: 14px;
+  font-family: "BPG Mrgvlovani";
+}
+.title {
+  font-size: 16px;
+  color: #fff;
+  background-color: #414141;
+  padding: 12px 25px;
+  border-radius: 5px;
+}
+
+.s2 {
+  padding: 10px 0 50px;
+  margin-bottom: 40px;
+}
+.s2 .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #09bc8a;
+  background-color: transparent;
+  opacity: 1;
+}
+.s2 .swiper-pagination-bullet-active {
+  background-color: #09bc8a;
+}
+
+.description {
+  padding-top: 15px;
+}
+
+.product_name {
+  font-family: "BPG Mrgvlovani";
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.product_price {
+  font-size: 12px;
+  font-family: "BPG Mrgvlovani";
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+.price_block {
+  margin-bottom: 15px;
+}
+.product_price span {
+  color: #414141;
+  font-size: 18px;
+  padding-left: 5px;
+}
+
+.more_btn {
+  height: 40px;
+  background-color: #09bc8a;
+  border: 1px solid #09bc8a;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.more_btn:hover {
+  background-color: #414141;
+  border: 1px solid #414141;
+  color: #fff;
+}
+
+.product_img {
+  height: 350px;
+  position: relative;
+}
+.product_img img {
+  border-radius: 10px;
+}
+.additional_info {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-transform: uppercase;
+  font-family: "BPG Mrgvlovani";
+  width: 62px;
+  height: 31px;
+  border-radius: 10px 0 10px 0;
+  background-color: #09bc8a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity_ {
+  background-color: #f3f4f5;
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+.search_btn {
+  width: 100%;
+  height: 50px;
+  background-color: #414141;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.search_btn:hover {
+  background-color: #09bc8a;
+}
+.select-styled {
+  border-radius: 10px;
+}
+
+.sort_info {
+  background-color: #f7f7f5;
+  border-radius: 10px;
+  padding: 20px 15px;
+}
+.sort_title {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+.info_txt {
+  font-size: 12px;
+  font-family: "BPG Mrgvlovani";
+  color: #09bc8a;
+  position: relative;
+  border-bottom: dashed 1px #c8c8c8;
+  line-height: 0.1em;
+  margin-bottom: 25px;
+}
+.info_txt span {
+  background-color: #f7f7f5;
+  padding-right: 10px;
+}
+
+.sort_box {
+  margin-bottom: 20px;
+}
+.sort__info {
+  font-size: 10px;
+  margin-bottom: 12px;
+  font-family: "BPG Mrgvlovani";
+}
+.new_ {
+  color: #09bc8a;
+}
+.dashed_line {
+  border-bottom: 1px dashed #c8c8c8;
+  margin-bottom: 15px;
+}
+
+.present_ {
+  color: #f7af4c;
+  font-size: 14px;
+}
+.banner_item {
+  width: 100%;
+  height: 478px;
+}
+.product_img_item {
+  height: 280px;
+}
+.more_product {
+  font-size: 14px;
+  text-decoration: underline;
+  margin: 30px 0;
+}
+.grooming_banner {
+  background-image: url("../img/spaniel-puppy-playing-studio-cute-doggy-pet-is-sitting-isolated-blue-background-cavalier-king-charles-negative-space-insert-your-text-image-concept-movement-animal-rights.png");
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 60px 100px;
+}
+.banner_block {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner_title {
+  font-size: 40px;
+  color: #000;
+  font-family: "Gilroy GEO";
+  text-align: center;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+
+.search_button {
+  color: #000;
+  width: 223px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000000;
+  transition: all 0.3s ease;
+}
+.search_button:hover {
+  background-color: #09bc8a;
+  color: #fff;
+  border: 1px solid #09bc8a;
+}
+
+.service_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+}
+.service_item img {
+  width: 100%;
+}
+.hr_ {
+  border-bottom: 1px solid #c8c8c8;
+}
+.footer_block {
+  padding-top: 30px;
+  font-size: 14px;
+  color: #000000;
+  justify-content: space-between;
+}
+.footer_nav {
+  margin-right: 60px;
+}
+.footer_nav_li {
+  margin-bottom: 15px;
+}
+.footer_nav_li:last-child {
+  margin-bottom: 0;
+}
+.terms_ {
+  color: #09bc8a;
+}
+.social_block {
+  margin-bottom: 15px;
+}
+.social_icons {
+  margin-right: 15px;
+}
+.social_icons:last-child {
+  margin-right: 0;
+}
+.social_item {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #c8c8c8;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.social_item:hover {
+  background-color: #09bc8a;
+}
+.rights_ {
+  text-align: end;
+}
+.rights_ span {
+  color: #09bc8a;
+}
+.panel-default > .panel-heading {
+  color: #333;
+  background-color: #fff;
+  border-color: #e4e5e7;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.panel-default > .panel-heading a {
+  display: block;
+  padding: 10px 0;
+}
+.panel-body {
+  position: relative;
+}
+.panel-body::after {
+  border-bottom: 1px solid #c8c8c8;
+  width: 171px;
+  position: absolute;
+  content: "";
+  bottom: 0;
+}
+.panel-default > .panel-heading a:after {
+  content: "";
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  float: right;
+  transition: transform 0.25s linear;
+  -webkit-transition: -webkit-transform 0.25s linear;
+}
+
+.panel-default > .panel-heading a[aria-expanded="true"]:after {
+  content: "";
+  background-image: url("../img/arrow-down-b.svg");
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.panel-default > .panel-heading a[aria-expanded="true"] {
+  color: #09bc8a !important;
+}
+.panel-default > .panel-heading a[aria-expanded="false"]:after {
+  content: "";
+  background-image: url("../img/up.svg");
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  width: 12px;
+  height: 12px;
+}
+.list_item {
+  font-size: 12px;
+}
+.list_item li {
+  padding-bottom: 10px;
+}
+.register_btn,
+.sign_btn,
+.add_info_btn {
+  color: #fff;
+  width: 350px;
+  height: 50px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.register_btn {
+  background-color: #09bc8a;
+}
+.sign_btn {
+  background-color: #f7af4c;
+}
+.add_info_btn {
+  background-color: #4ca2f7;
+}
+.all_announcement {
+  color: #09bc8a;
+  font-size: 14px;
+}
+.filter_btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #f3f4f5;
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+.filter_btn img {
+  margin-left: 10px;
+}
+.filter_menu .dropdown-menu {
+  min-width: 100%;
+  background-color: #f3f4f5;
+}
+.filter_menu .btn_primary {
+  width: 100%;
+  background-color: #09bc8a;
+}
+.choose_item .rev-select {
+  height: 35px;
+  border-radius: 5px;
+}
+.choose_item .select-styled {
+  border-radius: 5px;
+  font-size: 12px;
+}
+.choose_item .select-styled::after {
+  top: 10px;
+}
+.info_title {
+  font-size: 20px;
+  color: #09bc8a;
+}
+.input_block {
+  color: #9c9c9c;
+}
+.choose_item,
+.input_block {
+  font-size: 12px;
+  font-family: "BPG Mrgvlovani";
+}
+.input_block input {
+  height: 35px;
+  border: 1px solid #c8c8c8;
+  padding-left: 15px;
+  border-radius: 5px;
+}
+input:focus {
+  outline: none;
+}
+.switch_btn {
+  right: 0;
+  top: 28px;
+}
+.switch-button {
+  border: 1px solid #c8c8c8;
+  overflow: hidden;
+  width: 70px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #9c9c9c;
+  position: relative;
+  padding-right: 38px;
+  position: relative;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.switch-button:before {
+  content: "₾";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -4px;
+  width: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.switch-button-checkbox {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 2;
+}
+.switch-button-checkbox:checked + .switch-button-label:before {
+  transform: translateX(34px);
+  transition: transform 300ms linear;
+  color: #fff;
+}
+
+.switch-button-checkbox + .switch-button-label {
+  position: relative;
+  width: 34px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  pointer-events: none;
+}
+
+.switch-button-checkbox + .switch-button-label:before {
+  content: "";
+  background: #09bc8a;
+  border: 1px solid #09bc8a;
+  height: 100%;
+  width: 34px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 4px;
+  transform: translateX(0);
+  transition: transform 300ms;
+}
+
+.switch-button-checkbox + .switch-button-label .switch-button-label-span {
+  position: relative;
+}
+
+.switch-button-checkbox:checked + .switch-button-label:before {
+  transform: translateX(34px);
+  transition: transform 300ms linear;
+}
+
+.switch-button-label:before {
+  content: "";
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+  transform: translateX(0);
+  transition: transform 300ms;
+}
+.input_block textarea {
+  width: 100%;
+  height: 145px;
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+  color: #9c9c9c;
+  padding: 15px;
+  resize: none;
+  overflow-y: scroll;
+  line-height: normal;
+}
+.input_block textarea::-webkit-scrollbar {
+  display: none;
+}
+textarea:focus {
+  outline: none;
+}
+
+.working_table .form-group,
+.product_image .form-group {
+  display: block;
+}
+
+.working_table .form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+.product_image .form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.working_table .form-group label,
+.product_image .form-group label,
+.custom_check .form-group label {
+  position: relative;
+  cursor: pointer;
+}
+.custom_check {
+  height: initial !important;
+}
+.custom_check .check_block {
+  position: initial;
+}
+.working_table .form-group label:before,
+.product_image .form-group label:before,
+.custom_check .form-group label::before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #09bc8a;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 9px;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.working_table .form-group input:checked + label::before,
+.product_image .form-group input:checked + label::before {
+  background-color: #09bc8a;
+}
+.working_table .form-group input:checked + label:after,
+.product_image .form-group input:checked + label:after,
+.custom_check .form-group input:checked + label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.custom_check .form-group input:checked + label::after {
+  top: 3px !important;
+  left: 10px !important;
+}
+.check_block {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.delete_ {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #e81c53;
+  font-size: 20px;
+}
+.file_upload label {
+  background-color: #f7af4c;
+  color: #fff;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.information_button {
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #c8c8c8;
+  transition: all 0.3s ease;
+  color: #5a5a5a;
+  font-size: 14px;
+  font-family: "BPG Mrgvlovani";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.information_button:hover {
+  background-color: #f7af4c;
+  color: #fff;
+}
+.type_ {
+  color: #09bc8a;
+  margin-bottom: 25px;
+}
+.custom_buttons {
+  flex-wrap: wrap;
+}
+.custom_type [type="radio"]:checked,
+.custom_type [type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+.custom_type [type="radio"]:checked + label,
+.custom_type [type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #666;
+  font-size: 14px;
+}
+.custom_type [type="radio"]:checked + label:before,
+.custom_type [type="radio"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+}
+.custom_type [type="radio"]:checked + label:after,
+.custom_type [type="radio"]:not(:checked) + label:after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: #09bc8a;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.custom_type [type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.custom_type [type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.custom_price {
+  color: #09bc8a;
+  font-size: 24px;
+  font-family: "BPG Mrgvlovani";
+}
+.upload_btn {
+  width: 264px;
+  height: 50px;
+  background-color: #09bc8a;
+  border: 1px solid #09bc8a;
+  color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+.upload_btn:hover {
+  background-color: #fff;
+  color: #09bc8a;
+}
+.payment_cards {
+  font-size: 14px;
+  margin-bottom: 40px;
+  align-items: center;
+  line-height: normal;
+}
+.product_image {
+  height: 220px;
+}
+.input_label {
+  font-size: 12px;
+  font-family: "BPG Mrgvlovani";
+}
+.working_list {
+  font-size: 12px;
+  font-family: "BPG Mrgvlovani";
+}
+.working_list .form-group label:before {
+  margin-right: 20px;
+}
+.working_hours {
+  margin-left: 30px;
+}
+.hours {
+  width: 53px;
+  height: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.hours input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+  padding-left: 15px;
+}
+.hours:first-child {
+  margin-right: 10px;
+}
+.hours:first-child::after {
+  content: ":";
+  position: absolute;
+  right: -8px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.start_ {
+  position: relative;
+}
+.start_::after {
+  position: absolute;
+  content: "-";
+  right: -10px;
+  top: 5px;
+}
+.weekday_ {
+  width: 100px;
+}
+.back_to .circle_ {
+  background-color: #d8d8d8;
+  left: -15px;
+}
+.back_to:hover .circle_ {
+  background-color: #09bc8a;
+}
+.back_to:hover img {
+  transform: translate(-12%);
+}
+
+.success_title {
+  color: #09bc8a;
+  font-size: 30px;
+  margin-bottom: 45px;
+}
+.back_to .arrow_items {
+  z-index: 1;
+  margin-right: 25px;
+}
+.back_to img {
+  transition: all 0.3s ease;
+}
+.about_us_section {
+  display: flex;
+  justify-content: end;
+  margin: 50px 0 100px;
+}
+
+.about_us_info {
+  width: 594px;
+  line-height: normal;
+}
+.about_us_info .main_title {
+  font-size: 80px;
+  color: #09bc8a;
+}
+.txt_block p {
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-family: "BPG Mrgvlovani";
+  text-align: end;
+}
+.img_bg {
+  position: absolute;
+  left: -600px;
+  top: -100px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pagination a {
+  color: #000000 !important;
+  float: left;
+  padding: 8px;
+  text-decoration: none;
+  font-family: "ALK Katerina";
+}
+.arrow_ {
+  position: relative;
+  z-index: 1;
+}
+.arrow_ img {
+  transition: all 0.3s ease;
+}
+.pagination .circle_ {
+}
+.arrow_:hover .left_arrow {
+  transform: translate(-12%);
+}
+.arrow_:hover .right_arrow {
+  transform: translate(12%);
+}
+.arrow_:hover .circle_ {
+  background-color: #09bc8a;
+}
+.left_ .circle_ {
+  left: -10px;
+}
+
+.right_ .circle_ {
+  right: -10px;
+}
+.green_color {
+  color: #09bc8a;
+}
+.nav_item_li {
+  margin-right: 7px;
+  font-size: 14px;
+}
+.nav_item_li:last-child {
+  margin-right: 0;
+}
+.nav_item_li a {
+  position: relative;
+  padding-right: 15px;
+}
+.nav_item_li a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  background-image: url("../img/arr_.svg");
+  width: 10px;
+  height: 15px;
+  background-repeat: no-repeat;
+  top: 0;
+}
+.product_gallery {
+  display: flex;
+  align-items: center;
+}
+.s4 {
+  width: 490px;
+  height: 430px;
+}
+.s3,
+.s4 {
+  margin: 0;
+}
+.s3 {
+  height: 320px;
+  width: 103px;
+}
+.s3 img,
+.s4 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.thumbs_ {
+  height: 420px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.thumbs_ .swiper-button-next,
+.thumbs_ .swiper-button-prev {
+  left: 35%;
+  right: initial;
+  opacity: 1;
+}
+.thumbs_ .swiper-button-next:hover .circle_,
+.thumbs_ .swiper-button-prev:hover .circle_ {
+  background-color: #09bc8a;
+}
+.thumbs_ .swiper-button-next img,
+.thumbs_ .swiper-button-prev img {
+  transform: rotate(90deg);
+}
+.thumbs_ .swiper-button-next {
+  bottom: -15px;
+  top: initial;
+}
+.thumbs_ .swiper-button-prev {
+  top: 40px;
+}
+.thumbs_ .arrow_up {
+  padding-bottom: 50px;
+}
+.thumbs_ .arrow_up .circle_ {
+  top: 10px;
+}
+.thumbs_ .arrow_down .circle_ {
+  top: -24px;
+}
+.nav_item {
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+.nav_item::-webkit-scrollbar {
+  display: none;
+}
+.product_info_item {
+  border-top: 1px solid #c8c8c8;
+  font-family: "BPG Mrgvlovani";
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.product_info_item > div {
+  flex-wrap: wrap;
+}
+.products_name {
+  font-size: 18px;
+}
+.price_item {
+  background-color: #09bc8a;
+  color: #fff;
+  padding: 16px 40px;
+  border-radius: 25px;
+  font-size: 20px;
+}
+.product_details {
+  min-width: 80px;
+  margin-right: 15px;
+}
+.dark_color {
+  color: #000;
+}
+.desciption_txt {
+  font-size: 14px;
+  line-height: normal;
+  margin: 30px 0;
+}
+.contact_btn {
+  border: 1px solid #09bc8a;
+  color: #000;
+  height: 50px;
+  width: 158px;
+  padding: 18px 0;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: "BPG Mrgvlovani Caps 2010";
+}
+.contact_btn:hover {
+  background-color: #09bc8a;
+  color: #fff;
+}
+.sub_title {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 25px;
+}
+.similar_products {
+  margin-bottom: 40px;
+}
+.similar_products .swiper-button-prev,
+.similar_products .swiper-button-next {
+  content: none;
+}
+.similar_products .circle_ {
+  position: absolute;
+  background-color: #d8d8d8;
+  width: 38px;
+  height: 38px;
+  z-index: -1;
+  top: -7px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.similar_products .swiper-button-prev .circle_ {
+  left: -15px;
+}
+.similar_products .swiper-button-next .circle_ {
+  right: -15px;
+}
+.similar_products .swiper-button-next {
+  right: 0;
+}
+
+.similar_products .swiper-button-prev {
+  left: 0;
+}
+.similar_products .swiper-button-prev img,
+.similar_products .swiper-button-next img {
+  transition: all 0.3s ease;
+}
+.similar_products .swiper-button-prev:hover img {
+  transform: translateX(-12%);
+}
+.similar_products .swiper-button-next:hover img {
+  transform: translateX(12%);
+}
+.similar_products .swiper-button-prev:hover .circle_,
+.similar_products .swiper-button-next:hover .circle_ {
+  background-color: #09bc8a;
+}
+.input_item {
+  color: #9c9c9c;
+}
+.input_item input,
+.gender_select .rev-select {
+  width: 100%;
+  height: 35px;
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+  font-size: 12px;
+  padding-left: 40px;
+}
+.gender_select .select-styled {
+  font-size: 12px;
+}
+.gender_select .select-styled::after {
+  top: 8px;
+}
+.input_item input::placeholder {
+  color: #9c9c9c;
+}
+.input_item > i {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+}
+.user_info {
+  margin-bottom: 25px;
+  color: #09bc8a;
+  font-size: 18px;
+}
+.info_ {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.top_txt {
+  font-size: 12px;
+  font-family: "BPG Mrgvlovani";
+  margin-bottom: 10px;
+}
+.password_btn {
+  background-color: #c8c8c8;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 5px;
+  width: 195px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.progress_bar {
+  font-size: color;
+  font-size: 12px;
+}
+.dark-grey {
+  width: 100%;
+  height: 10px;
+  background-color: #c8c8c8;
+  position: relative;
+}
+.round_corner {
+  border-radius: 5px;
+}
+.green_bg {
+  background-color: #09bc8a;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 5px;
+}
+.agree_block {
+  font-size: 12px;
+  font-family: "BPG Mrgvlovani";
+}
+.agree_block input {
+  margin-right: 10px;
+}
+
+.agree_block .form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.agree_block .form-group label {
+  position: relative;
+  cursor: pointer;
+  color: #9c9c9c;
+}
+
+.agree_block .form-group label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border-radius: 2px;
+  border: 2px solid #c8c8c8;
+  padding: 5px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.agree_block .form-group input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  background-color: #c8c8c8;
+}
+.btn_ {
+  width: 197px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.green_btn {
+  background-color: #09bc8a;
+  border: 1px solid #09bc8a;
+  cursor: pointer;
+}
+.green_btn:hover {
+  background-color: #fff;
+  border: 1px solid #09bc8a;
+  color: #09bc8a;
+}
+.orange_btn {
+  background-color: #f7af4c;
+  border: 1px solid #f7af4c;
+  cursor: pointer;
+}
+.orange_btn:hover {
+  background-color: #fff;
+  color: #f7af4c;
+}
+.registered_ {
+  font-size: 10px;
+  font-family: "BPG Mrgvlovani";
+}
+.blog_img {
+  width: 100%;
+  height: 400px;
+}
+.blog_img img {
+  border-radius: 10px;
+}
+.blog_detail_info {
+  margin-bottom: 25px;
+}
+.blog_detail_info {
+  font-size: 14px;
+  color: #8d9ab2;
+}
+.author_ {
+  color: #09bc8a;
+}
+.blog_title {
+  font-size: 26px;
+  color: #000;
+  line-height: normal;
+}
+
+.blog_txt {
+  font-family: "BPG Mrgvlovani";
+  line-height: normal;
+}
+.upload_blog {
+  background-color: #09bc8a;
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #09bc8a;
+  transition: all 0.3s ease;
+  margin-bottom: 25px;
+}
+
+.upload_blog:hover {
+  background-color: #fff;
+  color: #09bc8a;
+}
+.sub_titles {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 60px;
+  position: relative;
+}
+.sub_titles::after {
+  content: "";
+  position: absolute;
+  width: 12%;
+  height: 7px;
+  background-color: #09bc8a;
+  border-radius: 5px;
+  left: 0;
+  bottom: -15px;
+}
+.sub_titles::before {
+  content: "";
+  position: absolute;
+  width: 85%;
+  height: 7px;
+  background-color: #eaeaea;
+  border-radius: 5px;
+  right: 0;
+  bottom: -15px;
+}
+.search_form_input input {
+  width: 100%;
+  height: 80px;
+  box-shadow: 0px 3px 17px rgba(0, 0, 0, 7%);
+  border: none;
+  padding: 20px;
+  color: #8d9ab2;
+  font-size: 12px;
+  font-family: "BPG Mrgvlovani";
+}
+.search_button_ {
+  width: 59px;
+  height: 54px;
+  border-radius: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #09bc8a;
+  border: none;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+.category_list {
+  font-family: "BPG Mrgvlovani";
+  color: #000000;
+}
+.category_list li {
+  margin-bottom: 20px;
+}
+.category_list li:last-child {
+  margin-bottom: 0;
+}
+.last_added_items {
+  margin-bottom: 20px;
+}
+.last_add_img {
+  width: 142px;
+  height: 116px;
+  margin-right: 30px;
+}
+.last_add_img img {
+  border-radius: 5px;
+}
+.sm_title {
+  font-size: 15px;
+  margin-bottom: 10px;
+  line-height: normal;
+  color: #000;
+}
+.add_time {
+  color: #8d9ab2;
+  font-size: 12px;
+}
+.sub_info {
+  width: 240px;
+}
+.tags {
+  border: 1px solid #eaeaea;
+  border-radius: 23px;
+  font-size: 12px;
+  padding: 12px 30px;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.tags:hover {
+  background-color: #09bc8a;
+  border: 1px solid #09bc8a;
+  color: #fff;
+}
+
+.blog_name {
+  font-family: "BPG Mrgvlovani";
+}
+.blog_txt_area textarea {
+  width: 100%;
+  height: 125px;
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+  padding: 15px;
+  resize: none;
+}
+.txt_limit {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  color: #09bc8a;
+  font-size: 12px;
+  font-family: "BPG Mrgvlovani";
+}
+.txt {
+  font-family: "BPG Mrgvlovani";
+}
+.blog_block textarea {
+  height: 500px;
+}
+.upload_img {
+  height: 155px;
+}
+.green_border {
+  border: 1px solid #09bc8a;
+}
+.green_border:hover {
+  background-color: #09bc8a;
+  color: #fff;
+}
+.blog_sm_img {
+  width: 100%;
+  height: 283px;
+}
+.blog_sm_img img {
+  border-radius: 10px;
+}
+.tags_info {
+  width: 400px;
+}
+.tags_list_ul li {
+  margin-right: 15px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.social_info {
+  height: 100%;
+}
+
+.social_info p {
+  font-size: 14px;
+}
+.social_items {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid#E7E7E7;
+  background-color: #fbfbfb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social_info a {
+  margin-right: 10px;
+}
+.social_info a:last-child {
+  margin-right: 0;
+}
+.fb {
+  color: #3856a8;
+}
+.twitter {
+  color: #47a0d9;
+}
+
+.linkedin {
+  color: #0073b1;
+}
+.mail {
+  color: #00ab7c;
+}
+.comments_block {
+  box-shadow: 0px 3px 19px rgba(0, 0, 0, 10%);
+  padding: 15px 60px 35px 60px;
+}
+.add_comments_block {
+  box-shadow: 0px 3px 19px rgba(0, 0, 0, 10%);
+  padding: 25px 20px;
+}
+.comments_info {
+  margin-bottom: 35px;
+}
+.user_img {
+  width: 85px;
+  height: 85px;
+  margin-right: 15px;
+}
+.user_img img {
+  border-radius: 50%;
+}
+.comments_quantity_ {
+  font-size: 12px;
+}
+.comment_information {
+  width: 500px;
+}
+.user_name {
+  font-size: 14px;
+  color: #000;
+}
+
+.comment_item {
+  font-size: 12px;
+  font-family: "BPG Mrgvlovani";
+  line-height: normal;
+}
+.alert_info {
+  font-size: 12px;
+  text-align: end;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.comment_txtarea textarea {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  padding: 15px;
+  color: #565656;
+  font-size: 12px;
+  font-family: "BPG Mrgvlovani";
+  resize: none;
+}
+.comment_upload {
+  width: 260px;
+  height: 50px;
+  background-color: #09bc8a;
+  border: 1px solid #09bc8a;
+  color: #fff;
+  border-radius: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+.upload_btn:hover {
+  background-color: #fff;
+  color: #09bc8a;
+}
+.author_block {
+  align-items: center;
+  margin-bottom: 40px;
+}
+.person_img {
+  width: 150px;
+  height: 150px;
+  margin-right: 25px;
+}
+.person_img img {
+  border-radius: 50%;
+}
+
+.clinics_row {
+  padding-right: 255px;
+}
+.service_img {
+  width: 100%;
+  height: 400px;
+}
+.service_img img {
+  border-radius: 10px;
+}
+.service_info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.object_name {
+  color: #000;
+  font-size: 22px;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+.object_description {
+  line-height: normal;
+  font-size: 12px;
+  color: #595959;
+  font-family: "BPG Mrgvlovani";
+}
+.working_block {
+  font-family: "BPG Mrgvlovani";
+  border-top: 1px solid #c8c8c8;
+  border-bottom: 1px solid #c8c8c8;
+  padding: 20px 0;
+}
+.contact_info i {
+  color: #09bc8a;
+  margin-right: 15px;
+}
+.contact_info {
+  color: #595959;
+  font-size: 12px;
+  font-family: "BPG Mrgvlovani";
+}
+.veterinarian_info {
+  width: 500px;
+}
+.veterinarian_working_info {
+  border: 0;
+  border-left: 1px solid #c8c8c8;
+  border-right: 1px solid #c8c8c8;
+  padding: 0 30px;
+  height: 100%;
+}
+.news_title {
+  font-size: 18px;
+  color: #000;
+  line-height: normal;
+}
+.m_auto {
+  margin: 0 auto;
+}
+.green_line {
+  width: 100%;
+  height: 3px;
+  background-color: #09bc8a;
+}
+.sup_title {
+  font-size: 28px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  color: #000;
+  line-height: normal;
+  margin-bottom: 35px;
+}
+.txt_info {
+  font-family: "BPG Mrgvlovani";
+  margin-bottom: 20px;
+  line-height: normal;
+  color: #595959;
+}
+.image_item {
+  width: 234px;
+  height: 236px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.image_item:nth-child(5n) {
+  margin-right: 0;
+}
+.image_item img {
+  border-radius: 10px;
+}
+.image_list {
+  flex-wrap: wrap;
+}
+
+.demo-gallery > ul {
+  margin-bottom: 0;
+}
+.demo-gallery > ul > li {
+  float: left;
+  margin-bottom: 30px;
+  width: 200px;
+}
+.demo-gallery > ul > li a {
+  border: 3px solid #fff;
+  border-radius: 3px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  height: 300px;
+  border-radius: 10px;
+}
+.demo-gallery > ul > li a > img {
+  -webkit-transition: -webkit-transform 0.15s ease 0s;
+  -moz-transition: -moz-transform 0.15s ease 0s;
+  -o-transition: -o-transform 0.15s ease 0s;
+  transition: transform 0.15s ease 0s;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  height: 100%;
+  width: 100%;
+}
+.demo-gallery > ul > li a:hover > img {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+.demo-gallery > ul > li a:hover .demo-gallery-poster > img {
+  opacity: 1;
+}
+.demo-gallery > ul > li a .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.1);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: background-color 0.15s ease 0s;
+  -o-transition: background-color 0.15s ease 0s;
+  transition: background-color 0.15s ease 0s;
+}
+.demo-gallery > ul > li a .demo-gallery-poster > img {
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: opacity 0.3s ease 0s;
+  -o-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+}
+.demo-gallery > ul > li a:hover .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.demo-gallery .justified-gallery > a > img {
+  -webkit-transition: -webkit-transform 0.15s ease 0s;
+  -moz-transition: -moz-transform 0.15s ease 0s;
+  -o-transition: -o-transform 0.15s ease 0s;
+  transition: transform 0.15s ease 0s;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  height: 100%;
+  width: 100%;
+}
+.demo-gallery .justified-gallery > a:hover > img {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+.demo-gallery .justified-gallery > a:hover .demo-gallery-poster > img {
+  opacity: 1;
+}
+.demo-gallery .justified-gallery > a .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.1);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: background-color 0.15s ease 0s;
+  -o-transition: background-color 0.15s ease 0s;
+  transition: background-color 0.15s ease 0s;
+}
+.demo-gallery .justified-gallery > a .demo-gallery-poster > img {
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: opacity 0.3s ease 0s;
+  -o-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+}
+.demo-gallery .justified-gallery > a:hover .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.demo-gallery .video .demo-gallery-poster img {
+  height: 48px;
+  margin-left: -24px;
+  margin-top: -24px;
+  opacity: 0.8;
+  width: 48px;
+}
+.demo-gallery.dark > ul > li a {
+  border: 3px solid #04070a;
+}
+.home .demo-gallery {
+  padding-bottom: 80px;
+}
+.profile_info {
+  background-color: #f8f8f8;
+
+  font-size: 14px;
+  border-radius: 5px;
+  margin-bottom: 35px;
+}
+.privite_info.active_,
+.announcemenet_info.active_ {
+  background-color: #09bc8a;
+  color: #fff;
+  border-radius: 5px;
+}
+.profile_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 238px;
+  height: 50px;
+  background-color: #f8f8f8;
+}
+.profile_img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+.profile_img > img {
+  border-radius: 50%;
+}
+.profile_button {
+  width: 210px;
+}
+.profile_button .btn {
+  width: 100%;
+  height: 40px;
+  background-color: #09bc8a;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 23px;
+}
+
+.profile_button .dropdown-menu {
+  width: 100%;
+  border-radius: 5px 5px 15px 15px;
+  border: none;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 16%);
+}
+.profile_button .dropdown-menu.show {
+  top: -25px !important;
+  z-index: -1;
+}
+.dropdown-item:hover {
+  background-color: transparent;
+}
+.profile_button .dropdown-item {
+  font-size: 10px;
+  font-family: "BPG Mrgvlovani";
+  margin-bottom: 10px;
+}
+.profile_button .dropdown-item:first-child {
+  padding-top: 40px;
+}
+.log_out {
+  color: #e81c53 !important;
+}
+.image_ {
+  height: 217px;
+  width: 100%;
+}
+.image_ img {
+  border-radius: 10px;
+}
+.describtion_item {
+  font-size: 12px;
+  font-family: "BPG Mrgvlovani";
+}
+.edit_btn {
+  width: 197px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #09bc8a;
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+  border: 1px solid #09bc8a;
+}
+.edit_btn:hover {
+  background-color: #fff;
+  border: 1px solid #09bc8a;
+  color: #09bc8a;
+}
+.describtion_item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.toggle-format {
+  width: 52px;
+  height: 26px;
+  position: relative;
+  border: 1px solid #b1a6a6;
+  color: #5a5a5a;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+}
+
+@keyframes switch-right {
+  0% {
+    max-width: 6.1em;
+  }
+  33% {
+    max-width: 14.4em;
+  }
+  66% {
+    max-width: 14.4em;
+    transform: translateX(0em);
+  }
+  100% {
+    max-width: 7.9em;
+    transform: translateX(1.7em);
+  }
+}
+
+@keyframes switch-left {
+  0% {
+    max-width: 7.9em;
+    transform: translateX(1.7em);
+  }
+  33% {
+    max-width: 14.4em;
+    transform: translateX(0em);
+  }
+  66% {
+    max-width: 14.4em;
+  }
+  100% {
+    max-width: 6.1em;
+  }
+}
+.toggle-format input {
+  display: none;
+  color: #fff;
+}
+.toggle-format input + .slider {
+  animation: switch-left 0.2s ease forwards;
+  color: #fff;
+}
+.toggle-format input:checked + .slider {
+  animation: switch-right 0.2s ease forwards;
+  color: #fff;
+}
+.toggle-format .slider {
+  position: absolute;
+  display: block;
+  border-radius: 3px;
+  background-color: #09bc8a !important;
+  color: #fff;
+  width: 24px;
+  height: 100%;
+}
+.toggle-format .option {
+  padding: 2px;
+  margin: 0px 5px;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.fs_20 {
+  font-size: 20px;
+}
+.describe_txt {
+  line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.detailed_info {
+  font-size: 12px;
+  font-family: "BPG Mrgvlovani";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  line-height: normal;
+}
+
+.light_gray {
+  color: #9c9c9c;
+}
+.orange_color {
+  color: #f7af4c;
+}
+.dark_pink {
+  color: #e81c53;
+}
+.additional_images {
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 12px;
+  font-family: "BPG Mrgvlovani";
+}
+
+.additional_images p {
+  margin-bottom: 15px;
+}
+.small_images {
+  height: 60px;
+}
+
+.small_images img {
+  border-radius: 5px;
+}
+.update_btn {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  background-color: #4ca2f7;
+  font-family: "BPG Mrgvlovani Caps 2010";
+}
+.user_button {
+  color: #fff;
+  font-size: 30px;
+  background-color: transparent;
+}
+.user_ .dropdown-menu {
+  transform: translate3d(-210px, 59px, 0px);
+  font-size: 12px;
+  font-family: "BPG Mrgvlovani";
+}
+.user_.dropdown-item {
+  margin-bottom: 10px;
+}
+.expaire_input input {
+  border: 1px solid #09bc8a;
+}
+.buttons_ {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.save_ {
+  background-color: #09bc8a;
+}
+.delete_btn {
+  background-color: #e81c53;
+}
+.back_btn {
+  background-color: #9c9c9c;
+}
+.back_btn:hover .circle_ {
+  background-color: #09bc8a;
+}
+.recovery_password {
+  text-decoration: underline;
+  font-size: 14px;
+  color: #09bc8a;
+  font-family: "BPG Mrgvlovani";
+}
+.change_btn {
+  bottom: -10px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.change_btn img {
+  width: 100%;
+  height: 100%;
+}
+.select2-container--default .select2-selection--single {
+  border-radius: 10px;
+  height: 50px;
+  border: 1px solid #c8c8c8;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+.select2-results__option {
+  font-size: 12px;
+}
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
+  top: 10px;
+  right: 3px;
+}
+.share_bock {
+  justify-content: space-between;
+}
+.search_result {
+  font-size: 14px;
+  color: #000;
+}
+.share_btn {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  color: #09bc8a;
+  font-size: 14px;
+}
+.search_sm_btn {
+  width: 35px;
+  height: 36px;
+  border: 1px solid#C8C8C8;
+  background-color: transparent;
+  border-radius: 5px;
+}
+.search_input {
+  border: none;
+  border-bottom: 1px solid #707070;
+  color: #949494;
+  font-size: 14px;
+}
+.announcement_item {
+  color: #000;
+  font-size: 14px;
+}
+.quantity_item {
+  color: #09bc8a;
+}
+.search_info {
+  border: 0;
+  border-left: 1px solid #c8c8c8;
+  padding-left: 30px;
+}
+.sm_image_item {
+  width: 209px;
+  height: 109px;
+}
+.search_info_item {
+  width: 100%;
+}
+.w_80 {
+  width: 80%;
+}
+
+.custom_check .form-group {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.custom_check .form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.custom_check .form-group label {
+  position: relative;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.custom_check .form-group label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #09bc8a;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.custom_check .form-group input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #09bc8a;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.mobile_index {
+  position: absolute;
+  left: 40px;
+  top: 12px;
+  font-size: 12px;
+}
+.mobile_input {
+  padding-left: 80px !important;
+}
+.required_ {
+  color: red;
+  position: absolute;
+  right: 10px !important;
+  top: 5px !important;
+  font-size: 10px;
+}
+.mobile_number {
+  display: none;
+}
+.hide_ {
+  display: none;
+}
+.show_ {
+  display: block;
+}
+
+.announcement_info {
+  justify-content: initial;
+  flex-direction: initial;
+  height: initial;
+}
+
+.contact_btn {
+  padding: 18px 0;
+}
+.blog_img iframe {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.choose_item .required_ {
+  right: 20px !important;
+  top: -18px !important;
+}
+.user_ i {
+  color: #09bc8a;
+}
+.input_item,
+.input_item input::placeholder,
+.gender_select .rev-select,
+.agree_block .form-group label {
+  color: #5a5a5a;
+}
+.status_ {
+  font-size: 18px;
+  font-family: "BPG Mrgvlovani";
+  margin-bottom: 10px;
+}
+.description p {
+  min-height: 38px;
+  height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.banner_items__icon {
+  display: none;
+}
+.banner_item .banner_items__icon:hover {
+  display: block;
+  transition: all 0.3s ease;
+}

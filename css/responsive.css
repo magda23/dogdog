@@ -1,0 +1,396 @@
+@media (min-width: 575px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media (min-width: 1300px) {
+  .container {
+    max-width: 1366px;
+  }
+}
+@media (max-width: 1400px) {
+  .img_bg {
+    left: -200px;
+  }
+  .img_bg img {
+    width: 60%;
+  }
+}
+@media (max-width: 1360px) {
+  .custom_container {
+    padding: 0 20px 30px;
+  }
+  .nav_list {
+    font-size: 12px;
+  }
+  .action_info {
+    flex-direction: column;
+  }
+  .comments_block {
+    padding: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .logo_ {
+    margin-top: 0;
+  }
+
+  .search_info {
+    padding: 15px 0;
+    border: none;
+  }
+  .custom_container {
+    padding: 0;
+  }
+  main,
+  footer {
+    padding: 15px 10px;
+  }
+  .info_title {
+    padding-top: 10px;
+  }
+  .img_bg {
+    top: -50px;
+  }
+  .about_us_info .main_title {
+    font-size: 40px;
+  }
+  .img_bg {
+    display: none;
+  }
+  .about_us_section {
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .clinics_row {
+    padding: 0;
+  }
+  .about_us_info {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .txt_block p {
+    text-align: center;
+    font-size: 16px;
+  }
+  .success_section {
+    text-align: center;
+  }
+  .success_title {
+    font-size: 24px;
+    padding-top: 20px;
+  }
+  .comment_information {
+    width: 400px;
+  }
+  .veterinarian_working_info {
+    border: none;
+    padding: 0;
+  }
+  .image_item {
+    margin-right: 20px !important;
+  }
+}
+@media (max-width: 991px) {
+  .top_info {
+    flex-direction: column-reverse;
+  }
+  .slider_items {
+    flex-direction: column;
+  }
+  .img_item {
+    height: 360px;
+  }
+  .img_item,
+  .info_block {
+    width: 100%;
+  }
+  .s1 .swiper-button-next {
+    right: 55px;
+  }
+  .s1 .swiper-button-prev,
+  .s1 .swiper-button-next {
+    top: 30%;
+  }
+  .footer_block {
+    padding-top: 0;
+    flex-direction: column;
+  }
+  .footer_block > div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_nav {
+    display: none;
+  }
+  .terms_ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .rights_ {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .product_img {
+    height: 250px;
+  }
+  .product_img_item {
+    height: 200px;
+  }
+  .info_title {
+    font-size: 16px;
+  }
+  .about_us_info .main_title {
+    font-size: 24px;
+  }
+  .information_txt {
+    margin-bottom: 15px;
+  }
+  .product_gallery {
+    display: initial;
+  }
+  .s3,
+  .s4 {
+    width: 100%;
+  }
+  .arrow_up,
+  .arrow_down {
+    transform: rotate(270deg);
+  }
+  .thumbs_ .swiper-button-prev {
+    right: 0;
+    left: initial;
+  }
+  .thumbs_ .swiper-button-next {
+    left: 0;
+  }
+  .thumbs_ .swiper-button-prev,
+  .thumbs_ .swiper-button-next {
+    top: 50%;
+  }
+  .s4 {
+    margin-bottom: 15px;
+    height: 240px;
+  }
+  .thumbs_ {
+    height: auto;
+  }
+  .s3 {
+    height: 140px;
+  }
+  .blog_back_btn {
+    margin-left: 20px;
+  }
+  .alert_info {
+    text-align: start;
+  }
+  .alert_info br {
+    display: none;
+  }
+  .service_item {
+    padding: 0;
+  }
+  .veterinarian_user {
+    flex-direction: column;
+  }
+  .veterinarian_info {
+    width: 100%;
+  }
+  .sup_title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .image_list {
+    justify-content: space-between;
+  }
+  .image_item {
+    width: 49%;
+    margin-right: 0 !important;
+  }
+}
+@media (max-width: 767px) {
+  .grooming_banner {
+    padding: 40px 20px;
+  }
+  .banner_block {
+    width: 100%;
+    padding: 15px;
+    height: 100%;
+  }
+  .banner_title {
+    font-size: 25px;
+  }
+  .filter_menu .dropdown-menu {
+    min-width: 250px;
+  }
+  .sort_btn .dropdown-menu {
+    right: 0 !important;
+    left: initial !important;
+    transform: translate3d(0px, 50px, 0px) !important;
+  }
+  .information_txt {
+    flex-direction: column;
+  }
+  .title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .register_btn,
+  .sign_btn,
+  .add_info_btn {
+    width: 100%;
+  }
+  .main_title {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .sub_txt {
+    margin-bottom: 20px;
+  }
+  .s1 .swiper-button-next {
+    right: 35px;
+  }
+  .s1 .swiper-button-prev {
+    left: 35px;
+  }
+  .service_item img {
+    width: 70%;
+  }
+  .register_btn,
+  .sign_btn,
+  .add_info_btn {
+    margin-bottom: 10px;
+  }
+  .input_block textarea {
+    height: 100px;
+  }
+  .custom_buttons,
+  .payment_cards {
+    flex-direction: column;
+  }
+  .working_hours {
+    margin-left: 0;
+  }
+  .weekday_ {
+    width: 80px;
+    font-size: 10px;
+  }
+  .working_list .form-group label:before {
+    margin-right: 10px;
+  }
+  .hours {
+    width: 40px;
+  }
+  .upload_btn {
+    width: 100%;
+  }
+  .sub_title {
+    font-size: 16px;
+  }
+  .nav_item_li {
+    font-size: 12px;
+  }
+  .btn_ {
+    width: 100%;
+  }
+  .user_img {
+    width: 45px;
+    height: 45px;
+  }
+  .comment_information {
+    width: 220px;
+  }
+  .blog_sm_img {
+    height: 120px;
+  }
+  .blog_back_btn {
+    margin-top: 20px;
+  }
+  .service_img {
+    height: 200px;
+  }
+  .profile_info {
+    width: 100%;
+    background-color: transparent;
+    flex-direction: column;
+  }
+  .profile_info a {
+    width: 100%;
+  }
+  .profile_btn {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 575px) {
+  .blog_img {
+    height: 240px;
+  }
+  .blog_title {
+    font-size: 18px;
+  }
+  .blog_txt {
+    font-size: 14px;
+  }
+  .blog_item .more_btn {
+    width: 100%;
+  }
+  .last_added_items {
+    flex-direction: column;
+  }
+  .last_add_img {
+    width: 100%;
+    height: 150px;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .sub_info {
+    width: 100%;
+    font-size: 14px;
+  }
+  .sub_titles {
+    margin-bottom: 40px;
+  }
+  .banner_item {
+    height: 300px;
+  }
+  .blog_detail_info {
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .blog_detail_info p,
+  .tags_ {
+    margin-bottom: 15px;
+  }
+  .tags_info {
+    flex-wrap: wrap;
+  }
+  .person_img {
+    margin-right: 15px;
+    width: 100px;
+    height: 100px;
+  }
+  .blog_user_info {
+    font-size: 14px;
+  }
+  .object_name {
+    font-size: 18px;
+  }
+  .service_item img {
+    width: 50%;
+  }
+  .sup_title {
+    font-size: 18px;
+  }
+  .image_item {
+    height: 155px;
+  }
+}

@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="google-site-verification" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>DogDog</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="plugin/swiperSlider/css/swiper.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="plugin/bootstrap-4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      text="text/css"
+      href="plugin/fontawesome/css/all.min.css"
+    />
+    <link rel="stylesheet" text="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" text="text/css" href="css/reset.css" />
+    <link rel="stylesheet" href="css/select.css" />
+    <link rel="stylesheet" text="text/css" href="css/style.css?v=1" />
+    <link rel="stylesheet" text="text/css" href="css/responsive.css?v=1" />
+  </head>
+
+  <body>
+    <div class="mobile_menu_block d-xl-none d-block">
+      <div
+        class="mobile_menu_items d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html">
+          <div class="logo_">
+            <img src="img/logo.svg" alt="" class="img_fluid" />
+          </div>
+        </a>
+        <div class="menu_block d-flex">
+          <div class="dropdown user_">
+            <button
+              class="btn dropdown-toggle user_button"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="fa-solid fa-circle-user"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="profile.html"
+                >პროფილის რედაქტირება</a
+              >
+              <a class="dropdown-item" href="myannouncement.html"
+                >ჩემი განცხადებები</a
+              >
+              <a class="dropdown-item log_out" href="#">პროფილიდან გასვლა</a>
+            </div>
+          </div>
+          <div class="burger_menu">
+            <div class="burger__">
+              <img src="img/menu-right.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile_navigation">
+        <div class="container">
+          <ul class="nav_ul mb-4">
+            <li class="nav_li">
+              <a href="index.html">ჩვენ შესახებ</a>
+            </li>
+            <div
+              class="panel-group"
+              id="accordion"
+              role="tablist"
+              aria-multiselectable="true"
+            >
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a
+                      role="button"
+                      data-toggle="collapse"
+                      data-parent="#accordion"
+                      href="#collapseOne"
+                      aria-expanded="false"
+                      aria-controls="collapseOne"
+                    >
+                      განცხადებები
+                    </a>
+                  </h4>
+                </div>
+                <div
+                  id="collapseOne"
+                  class="panel-collapse collapse in"
+                  role="tabpanel"
+                  aria-labelledby="headingOne"
+                >
+                  <div class="panel-body">
+                    <ul class="list_item">
+                      <li>
+                        <a href="#">VIP განცხადებები</a>
+                      </li>
+                      <li><a href="#">ყველა განცხადება</a></li>
+                      <li><a href="#">გავაჩუქებ</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <li class="nav_li">
+                <a href="#">ბლოგი</a>
+              </li>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                    <a
+                      class="collapsed"
+                      role="button"
+                      data-toggle="collapse"
+                      data-parent="#accordion"
+                      href="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      ვეტ კლინიკები
+                    </a>
+                  </h4>
+                </div>
+                <div
+                  id="collapseTwo"
+                  class="panel-collapse collapse"
+                  role="tabpanel"
+                  aria-labelledby="headingTwo"
+                >
+                  <div class="panel-body">
+                    <div class="panel-body">
+                      <ul class="list_item">
+                        <li>
+                          <a href="#">ვეტ კლინიკები</a>
+                        </li>
+                        <li><a href="#">ვეტ ექიმები</a></li>
+                        <li><a href="#">კინოლოგები</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <li class="nav_li">
+                <a href="#">მაღაზიები</a>
+              </li>
+              <li class="nav_li">
+                <a href="#">გრუმერები</a>
+              </li>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                  <h4 class="panel-title">
+                    <a
+                      class="collapsed"
+                      role="button"
+                      data-toggle="collapse"
+                      data-parent="#accordion"
+                      href="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      სიახლეები
+                    </a>
+                  </h4>
+                </div>
+                <div
+                  id="collapseThree"
+                  class="panel-collapse collapse"
+                  role="tabpanel"
+                  aria-labelledby="headingThree"
+                >
+                  <div class="panel-body">
+                    <ul class="list_item">
+                      <li>
+                        <a href="#">სიახლეები</a>
+                      </li>
+                      <li><a href="#">გამოფენები</a></li>
+                      <li><a href="#">ფოტოგალერეა</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ul>
+          <a href="#">
+            <div class="register_btn">რეგისტრაცია</div>
+          </a>
+          <a href="#">
+            <div class="sign_btn">ავტორიზაცია</div>
+          </a>
+          <a href="#">
+            <div class="add_info_btn">განცხადების დამატება</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container d-xl-block d-none">
+      <div class="top_block d-flex">
+        <div class="box">
+          <form name="search">
+            <input type="text" class="input" name="search" />
+          </form>
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="add_btn">
+          <p>განცხადების დამატება</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="custom_container">
+        <header class="d-xl-block d-none">
+          <div class="header_info">
+            <div
+              class="header_navigation d-flex align-items-center justify-content-between"
+            >
+              <a href="index.html">
+                <div class="logo_">
+                  <img src="img/logo.svg" alt="" class="img_fluid" />
+                </div>
+              </a>
+              <div class="nav_block d-flex align-items-center">
+                <a href="#">
+                  <div class="nav_list">ჩვენ შესახებ</div>
+                </a>
+                <a href="#">
+                  <div class="nav_list">
+                    განცხადებები
+                    <div class="sub_menu">
+                      <div class="position-relative">
+                        <ul class="sub_ul">
+                          <li class="sub_li">
+                            <a href="#">ყველა განცხადება</a>
+                          </li>
+                          <li class="sub_li">
+                            <a href="vip_announcement.html">VIP განცხადებები</a>
+                          </li>
+                          <li class="sub_li">
+                            <a href="#">გავაჩუქებ</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="nav_list">ბლოგი</div>
+                </a>
+
+                <a href="#">
+                  <div class="nav_list">
+                    ვეტ კლინიკები
+                    <div class="sub_menu">
+                      <div class="position-relative">
+                        <ul class="sub_ul">
+                          <li class="sub_li">
+                            <a href="clinics.html">ვეტ კლინიკები</a>
+                          </li>
+                          <li class="sub_li">
+                            <a href="veterinarians.html">ვეტ ექიმები</a>
+                          </li>
+                          <li class="sub_li">
+                            <a href="cynologists.html">კინოლოგები</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="nav_list">მაღაზიები</div>
+                </a>
+                <a href="#">
+                  <div class="nav_list">გრუმერები</div>
+                </a>
+                <a href="#">
+                  <div class="nav_list">
+                    სიახლეები
+                    <div class="sub_menu">
+                      <div class="position-relative">
+                        <ul class="sub_ul">
+                          <li class="sub_li">
+                            <a href="newses.html">სიახლეები</a>
+                          </li>
+                          <li class="sub_li">
+                            <a href="exebitions.html">გამოფენები</a>
+                          </li>
+                          <li class="sub_li">
+                            <a href="gallery.html">ფოტო გალერეა</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="dropdown profile_button">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  ნინო ნატროშვილი <i class="fa-solid fa-circle-user"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="profile.html"
+                    >პროფილის რედაქტირება</a
+                  >
+                  <a class="dropdown-item" href="myannouncement.html"
+                    >ჩემი განცხადებები</a
+                  >
+                  <a class="dropdown-item log_out" href="#"
+                    >პროფილიდან გასვლა</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main>
+          <section class="registration_section">
+            <p class="user_info">ჩემი პროფილი</p>
+            <div class="profile_info d-flex align-items-center">
+              <a href="profile.html" class="h-100">
+                <div class="profile_btn privite_info">პირადი ინფორმაცია</div>
+              </a>
+              <a href="myannouncement.html" class="h-100">
+                <div class="profile_btn announcemenet_info active_">
+                  ჩემი განცხადებები
+                </div>
+              </a>
+            </div>
+
+            <div class="col-xl-11">
+              <div class="row">
+                <div class="col-lg-3 col-sm-6 mb-4">
+                  <div class="image_">
+                    <img src="img/dog_.png" alt="" class="img_fluid" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                  <div class="describtion_item">
+                    <p class="product_name">ძაღლის ჯიშის სახელი</p>
+                    <div class="d-flex price_block mb-3">
+                      <p>ფასი:</p>
+                      <p>500$</p>
+                    </div>
+                    <p class="mb-2">აღწერა:</p>
+                    <p class="describe_txt mb-4 light_gray">
+                      შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და
+                      ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან...
+                    </p>
+                    <button class="edit_btn">
+                      <i class="fa-solid fa-pen mr-2"></i>რედაქტირება
+                    </button>
+                  </div>
+                </div>
+                <div class="col-lg-2 p-lg-0 pr-3 mb-4 d-lg-block d-none">
+                  <div class="detailed_info pt-4">
+                    <div class="detail_top_info">
+                      <div class="d-flex mb-3">
+                        <p>სტატუსი:</p>
+                        <p class="light_gray">უსაბუთო</p>
+                      </div>
+                      <div class="d-flex">
+                        <p>ასაკი:</p>
+                        <p class="light_gray">2 კვირა</p>
+                      </div>
+                    </div>
+                    <div class="detail_bottom_info">
+                      <p class="orange_color mb-3">განცხადებას ვადა გასდის</p>
+                      <p>30.06.2022</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-4 d-lg-block d-none">
+                  <div class="additional_images">
+                    <p>დამატებითი ფოტოები:</p>
+                    <div class="row">
+                      <div class="col-lg-3 mb-3">
+                        <div class="small_images">
+                          <img
+                            src="img/beagle-dog-sitting-with-white-background.png"
+                            alt=""
+                            class="img_fluid"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 mb-3">
+                        <div class="small_images">
+                          <img
+                            src="img/friendly-smart-basenji-dog-giving-his-paw-close-up-isolated-white.png"
+                            alt=""
+                            class="img_fluid"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 mb-3">
+                        <div class="small_images">
+                          <img
+                            src="img/adorable-jack-russell-retriever-puppy-portrait.png"
+                            alt=""
+                            class="img_fluid"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 mb-3">
+                        <div class="small_images">
+                          <img
+                            src="img/beagle-dog-sitting-with-white-background.png"
+                            alt=""
+                            class="img_fluid"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 mb-3">
+                        <div class="small_images">
+                          <img
+                            src="img/beagle-dog-sitting-with-white-background.png"
+                            alt=""
+                            class="img_fluid"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 mb-3">
+                        <div class="small_images">
+                          <img
+                            src="img/friendly-smart-basenji-dog-giving-his-paw-close-up-isolated-white.png"
+                            alt=""
+                            class="img_fluid"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 mb-3">
+                        <div class="small_images">
+                          <img
+                            src="img/adorable-jack-russell-retriever-puppy-portrait.png"
+                            alt=""
+                            class="img_fluid"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 mb-3">
+                        <div class="small_images">
+                          <img
+                            src="img/beagle-dog-sitting-with-white-background.png"
+                            alt=""
+                            class="img_fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                  <div class="image_">
+                    <img src="img/dog_.png" alt="" class="img_fluid" />
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4">
+                  <div class="describtion_item">
+                    <p class="product_name">ძაღლის ჯიშის სახელი</p>
+                    <div class="d-flex price_block mb-3">
+                      <p>ფასი:</p>
+                      <p>500$</p>
+                    </div>
+                    <p class="mb-2">აღწერა:</p>
+                    <p class="describe_txt mb-4 light_gray">
+                      შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და
+                      ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან...
+                    </p>
+                    <button class="edit_btn">
+                      <i class="fa-solid fa-pen mr-2"></i>რედაქტირება
+                    </button>
+                  </div>
+                </div>
+                <div class="col-lg-2 p-lg-0 pr-3 mb-4 d-lg-block d-none">
+                  <div class="detailed_info pt-4">
+                    <div class="detail_top_info">
+                      <div class="d-flex mb-3">
+                        <p>სტატუსი:</p>
+                        <p class="light_gray">უსაბუთო</p>
+                      </div>
+                      <div class="d-flex">
+                        <p>ასაკი:</p>
+                        <p class="light_gray">2 კვირა</p>
+                      </div>
+                    </div>
+                    <div class="detail_bottom_info">
+                      <p class="dark_pink mb-3">განცხადება ვადაგასულია</p>
+                      <p>30.06.2022</p>
+                    </div>
+                    <div class="update_btn">განახლება</div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-4 d-lg-block d-none">
+                  <div class="additional_images">
+                    <p>დამატებითი ფოტოები:</p>
+                    <div class="row">
+                      <div class="col-lg-3 mb-3">
+                        <div class="small_images">
+                          <img
+                            src="img/beagle-dog-sitting-with-white-background.png"
+                            alt=""
+                            class="img_fluid"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 mb-3">
+                        <div class="small_images">
+                          <img
+                            src="img/friendly-smart-basenji-dog-giving-his-paw-close-up-isolated-white.png"
+                            alt=""
+                            class="img_fluid"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 mb-3">
+                        <div class="small_images">
+                          <img
+                            src="img/adorable-jack-russell-retriever-puppy-portrait.png"
+                            alt=""
+                            class="img_fluid"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 mb-3">
+                        <div class="small_images">
+                          <img
+                            src="img/beagle-dog-sitting-with-white-background.png"
+                            alt=""
+                            class="img_fluid"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 mb-3">
+                        <div class="small_images">
+                          <img
+                            src="img/beagle-dog-sitting-with-white-background.png"
+                            alt=""
+                            class="img_fluid"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 mb-3">
+                        <div class="small_images">
+                          <img
+                            src="img/friendly-smart-basenji-dog-giving-his-paw-close-up-isolated-white.png"
+                            alt=""
+                            class="img_fluid"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 mb-3">
+                        <div class="small_images">
+                          <img
+                            src="img/adorable-jack-russell-retriever-puppy-portrait.png"
+                            alt=""
+                            class="img_fluid"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 mb-3">
+                        <div class="small_images">
+                          <img
+                            src="img/beagle-dog-sitting-with-white-background.png"
+                            alt=""
+                            class="img_fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pagination my-5">
+                <a href="#">
+                  <div class="arrow_ left_">
+                    <img
+                      src="img/arrow-left_black.png"
+                      alt=""
+                      class="left_arrow"
+                    />
+                    <div class="circle_"></div>
+                  </div>
+                </a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">
+                  <div class="arrow_ right_">
+                    <img
+                      src="img/arrow-right-black.svg"
+                      alt=""
+                      class="right_arrow"
+                    />
+                    <div class="circle_"></div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+        </main>
+        <hr class="hr_" />
+
+        <footer>
+          <div class="footer_block d-flex">
+            <div class="d-flex">
+              <a href="index.html">
+                <div class="logo_ mr-md-5">
+                  <img src="img/logo.svg" alt="" class="img_fluid" />
+                </div>
+              </a>
+              <ul class="footer_nav">
+                <li class="footer_nav_li">
+                  <a href="about_us.html"> ჩვენს შესახებ </a>
+                </li>
+                <li class="footer_nav_li">
+                  <a href="about_us.html">განცხადებები</a>
+                </li>
+                <li class="footer_nav_li">
+                  <a href="about_us.html"> ბლოგი</a>
+                </li>
+              </ul>
+              <ul class="footer_nav">
+                <li class="footer_nav_li">
+                  <a href="about_us.html">ვეტ კლინიკები</a>
+                </li>
+                <li class="footer_nav_li">
+                  <a href="#">მაღაზიები</a>
+                </li>
+                <li class="footer_nav_li">
+                  <a href="#">გრუმერები</a>
+                </li>
+              </ul>
+              <div class="terms_">
+                <p class="mb-3">საიტის მოხმარების წესები</p>
+                <div class="cards_ d-flex">
+                  <div class="card_item mr-3">
+                    <img src="img/credit-card-visa.png" alt="" />
+                  </div>
+                  <div class="card_item">
+                    <img src="img/mastercard.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer_add_info">
+              <div class="social_block d-flex justify-content-center">
+                <a href="#" class="social_icons">
+                  <div class="social_item">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </div>
+                </a>
+                <a href="#" class="social_icons">
+                  <div class="social_item">
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                </a>
+                <a href="#" class="social_icons">
+                  <div class="social_item">
+                    <i class="fa-brands fa-youtube"></i>
+                  </div>
+                </a>
+              </div>
+              <div class="rights_">
+                <p class="mb-2">Copyright © 2022 Dogdog.ge</p>
+                <p>Created by <span>Proservice</span></p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="plugin/swiperSlider/js/swiper.min.js"></script>
+    <script src="plugin/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="plugin/bootstrap-4.0.0/js/popper.min.js"></script>
+    <script src="plugin/bootstrap-4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+    <script src="js/app.js?v=1"></script>
+    <script src="plugin/selectbox.js"></script>
+  </body>
+</html>
